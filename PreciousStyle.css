@@ -23,10 +23,10 @@ figure .Gandalf {
 
 .gandalf-text {
 	position: relative;
-	bottom: 15%;
+	bottom: 70%;
 	width: 80%;
 	z-index: 2;
-	font-size: 400%;
+	font-size: 3em;
 	background-color: rgba(255, 255, 255, 1);
 	border-radius: 10px;
 	margin-left: 10%;
@@ -34,9 +34,9 @@ figure .Gandalf {
 
 .gandalf-name {
 	position: relative;
-	top: 50%;
+	bottom: 35%;
 	color: white;
-	font-size: 500%;
+	font-size: 3em;
 	z-index: 3;
 	opacity: 1;
 	color: white;
@@ -58,8 +58,8 @@ mark {
 
 .card:hover .gandalf-name {
 	position: relative;
-	top: 70%;
-	font-size: 200%;
+	bottom: 15%;
+	font-size: 2em;
 	z-index: 3;
 	opacity: 1;
 	color: white;
