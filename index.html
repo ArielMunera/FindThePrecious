@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
@@ -10,30 +10,30 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">FindThePrecious</a>
+		<nav class="navbar navbar-expand-lg navbar_header row">
+			<a class="navbar-brand" href="#"><img class="logo_name" src="integration_maquette_finale/logo.png" alt="FindthePrecious"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
+				<ul class="navbar-nav mr-auto col-12">
+					<li class="nav-item active col-2">
 						<a class="nav-link" href="#">Fellows <span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item col-2">
 						<a class="nav-link" href="#">The Ring</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item col-2">
 						<a class="nav-link" href="#">Get my reward</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item col-2">
 						<a class="nav-link" href="#">Best hunters</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item col-2">
 						<a class="nav-link" href="#">Join the army</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item col-2">
 						<a class="nav-link" href="#">Contact us</a>
 					</li>
 				</ul>
@@ -42,28 +42,28 @@
 	</header>
 
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<div class="container carousel-inner">
+		<div class="carousel-inner col-12">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="https://via.placeholder.com/140x140" alt="First slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>First slide</h5>
-					<p>...</p>
+				<img class="d-block w-100" src="integration_maquette_finale/dark_vador.jpg" alt="First slide">
+				<div class="carousel-caption col-12 d-none d-md-block">
+					<p>Sauron is a very good bro,<br />
+						please help him to find his ring ! -d.v.</p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="https://via.placeholder.com/140x140" alt="Second slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Second slide</h5>
-					<p>...</p>
+				<img class="d-block w-100" src="integration_maquette_finale/army.png" alt="Second slide">
+				<div class="carousel-caption col-12 d-none d-md-block">
+					<h5>Dangerous fellowship try to destroy the ring</h5>
+					<p>Orcs, Goblins, Balrogs, protect your master Sauron</p>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<img class="d-block w-100" src="https://via.placeholder.com/140x140" alt="Third slide">
+			<!--<div class="carousel-item">
+				<img class="d-block w-100" src="integration_maquette_finale/weneedyou-1.png" alt="Third slide">
 				<div class="carousel-caption d-none d-md-block">
 					<h5>Third slide</h5>
 					<p>...</p>
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,52 +74,48 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-	<p>Dangerous fellowship try to destroy the ring
-		Orcs, Goblins, Balrogs, protect your master Sauron</p>
+
 	<div class="fellows">
 		<h1>Fellows wanted dead (or alive if you want to eat them later)</h1>
-		<ul class="nav nav-pills bg-dark">
-			<li class="nav-item">
-				<a class="nav-link active" href="#">Most wanted</a>
+		<ul class="nav nav-pills row">
+			<li class="nav-item col-0 col-md-3">
 			</li>
-			<li class="nav-item">
+			<li class="nav-item col-12 col-md-2">
+				<a class="nav-link" href="#">Most wanted</a>
+			</li>
+			<li class="nav-item active col-12 col-md-2">
 				<a class="nav-link" href="#">Most dangerous</a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item col-12 col-md-2">
 				<a class="nav-link" href="#">Already captured</a>
 			</li>
 		</ul>
 		<div class="fellows-images row">
 			<div class="card col-12 col-md-4">
-				<img class="card-img-top" src="http://images.innoveduc.fr/integration_gandalf.png" alt="gandalf-image">
-				<p class="gandalf-name">Gandalf</p>
-				<p class="gandalf-text">Reward <mark>1000</mark> Golden coins</p>
-				<div class="card-body">
-					<h5 class="card-title">The Wizard</h5>
-					<p class="card-text">Small description...</p>
+				<img class="card-img-top gandalf" src="http://images.innoveduc.fr/integration_gandalf.png" alt="gandalf-image">
+				<p class="fellows-name">Gandalf</p>
+				<p class="fellows-text">Reward <span class="gold">1000</span> Golden coins</p>
+				<div class="fellows-card-body">
+					<p class="card-text">A very dangerous wiz and, balrog killer...</p>
 				</div>
 
 			</div>
 
 			<div class="card col-12 col-md-4">
-				<img class="card-img-top" src="https://via.placeholder.com/200x200" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Hobbit</h5>
-					<p class="card-text">Small description...</p>
-				</div>
-				<div class="card-img-overlay">
-					<h5 class="hobbit-name">Hobbit</h5>
+				<img class="card-img-top aragorn" src="integration_maquette_finale/aragorn.png" alt="Aragorn-image">
+				<p class="fellows-name">Aragorn</p>
+				<p class="fellows-text">Reward <span class="gold">800</span> Golden coins</p>
+				<div class="fellows-card-body-aragorn">
+					<p class="card-text">Sauron's finger says him his sword is dangerous...</p>
 				</div>
 			</div>
 
 			<div class="card col-12 col-md-4">
-				<img class="card-img-top" src="https://via.placeholder.com/200x200" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Yummy Dwarf</h5>
-					<p class="card-text">Small description...</p>
-				</div>
-				<div class="card-img-overlay">
-					<h5 class="dwarf-name">Yummy Dwarf</h5>
+				<img class="card-img-top gimli" src="integration_maquette_finale/gimli.png" alt="gimli-image">
+				<p class="gimli-name">Gimli</p>
+				<p class="dead-text">dead</p>
+				<div class="fellows-card-body-gimli">
+					<p class="card-text">A dwarf, with a beard and an axe...</p>
 				</div>
 			</div>
 		</div>
@@ -127,33 +123,41 @@
 
 	<div class="media captured">
 		<div class="media-body">
-			<h5 class="mt-0">I have captured one of them, how to get my reward ?</h5>
-			Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			<h2 class="mt-0">I have captured one of them, how to get my reward ?</h2>
+			<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
 		</div>
-		<img class="align-self-center ml-3" src="https://via.placeholder.com/140x140" alt="how-reward">
+		<img class="align-self-center ml-3" src="integration_maquette_finale/coin_sauron.png" alt="how-reward">
 	</div>
 	<button type="button">Contact us !</button>
 
 	<div class="best-hunters">
-		<h1>Best hunters</h1>
-		<div class="best-hunters-profiles row">
-			<div class="media hunter-1 col-6">
-				<div class="media-body">
-					<img class="align-self-center ml-3" src="https://via.placeholder.com/140x140" alt="image-hunter">
-					<h5 class="mt-0">ElvesKiller22</h5>2 captures - <a href="#">Profile</a>
+		<h1>Our best hunters</h1>
+		<div class="best-hunters row">
+			<div class="col-0 col-md-2"></div>
+			<div class="media hunter-1 col-3">
+				<div class="media">
+					<img class="align-self-center mr-3" src="integration_maquette_finale/hunter1.png" alt="image-hunter">
+					<div class="media-body">
+						<h5 class="mt-0">ElvesKiller22</h5>
+						<p>2 capture - <a href="#">Profile</a></p>
+					</div>
 				</div>
 			</div>
-			<div class="media hunter-1 col-6">
-				<div class="media-body">
-					<img class="align-self-center ml-3" src="https://via.placeholder.com/140x140" alt="image-hunter">
-					<h5 class="mt-0">Goblin45</h5>1 capture - <a href="#">Profile</a>
+			<div class="col-0 col-md-2"></div>
+			<div class="media hunter-1 col-3">
+				<div class="media">
+					<img class="align-self-center mr-3" src="integration_maquette_finale/hunter2.png" alt="image-hunter">
+					<div class="media-body">
+						<h5 class="mt-0">Goblin45</h5>
+						<p>1 capture - <a href="#">Profile</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="about-the-ring">
-		<div class="card">
+		<div class="card card-table">
 			<div class="card-header">
 				Ring Capabilities
 			</div>
@@ -180,27 +184,29 @@
 			</div>
 		</div>
 
-		<div class="card">
+		<div class="card card-ring">
 			<div class="card-header">
 				Why the ring is awesome ?
 			</div>
-			<div class="card-body">
-				<blockquote class="blockquote mb-0">
+			<div class="card-body row">
+				<blockquote class="blockquote mb-0 column">
 					<p>My precioooooousssssss ! Hrk Hrk, we want our preeciooooouuusssss !!</p>
-					<img class="align-self-center ml-3" src="https://via.placeholder.com/110x110" alt="gollum-image">
 					<footer class="blockquote-footer">Gollum</footer>
 				</blockquote>
+				<img class="align-self-center ml-3 col-1" src="integration_maquette_finale/gollum.png" alt="gollum-image">
 			</div>
 		</div>
 	</div>
 
-	<div class="media captured">
-		<img class="align-self-center ml-3" src="https://via.placeholder.com/140x140" alt="join-mordor">
-		<div class="media-body">
-			<h5 class="mt-0">Join Mordor Army, we need you !</h5>
-			Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+	<div class="media army">
+		<div class="row">
+			<div class="media-body col-9">
+				<h5 class="mt-0">Join Mordor Army, we need you !</h5>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			</div>
+			<img class="align-self-center ml-3 col-3" src="integration_maquette_finale/army.png" alt="join-mordor">
 		</div>
-		<button type="button">More info on SauronRulesThemAll.com</button>
+		<button type="button" class="col-3">More info on SauronRulesThemAll.com</button>
 	</div>
 
 	<form>
@@ -223,32 +229,33 @@
 			</select>
 		</div>
 		<div class="form-group">
-			<label for="exampleFormControlTextarea1">Example textarea</label>
-			<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message" rows="3"></textarea>
+			<label for="exampleFormControlTextarea1">Your message to the master</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message to the master" rows="3"></textarea>
 		</div>
 		<button type="submit" class="btn btn-dark">Submit</button>
 	</form>
 
 	<footer>
-		<ul class="nav justify-content-center">
-			<li class="nav-item">
+		<ul class="nav justify-content-center row">
+			<li class="nav-item col-4">
 				<nav class="nav flex-column">
 					<a class="nav-link" href="#">About us</a>
 					<a class="nav-link" href="#">Fellows</a>
 					<a class="nav-link" href="#">Join ou army</a>
 				</nav>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item col-4">
 				<nav class="nav flex-column">
 					<a class="nav-link" href="#">FAQ</a>
 					<a class="nav-link" href="#">Reward conditions</a>
 					<a class="nav-link" href="#">Legal mentions</a>
 				</nav>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item col-4">
 				<nav class="nav flex-column">
 					<a class="nav-link" href="#">Saurun4Ever.com</a>
 					<a class="nav-link" href="#">Follow him also on twitter</a>
+					<a class="navbar-brand" href="#"><img class="logo_name" src="integration_maquette_finale/logo.png" alt="FindthePrecious"></a>
 				</nav>
 			</li>
 		</ul>

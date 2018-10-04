@@ -1,76 +1,297 @@
-body {
-	text-align: center;
+@font-face {
+	font-family: 'policeTextes';
+	src: url('partybusiness.ttf');
 }
 
+@font-face {
+	font-family: 'policeTitres';
+	src: url('anirm___.ttf');
+}
 
-ul {
+body {
+	text-align: center;
+	font-family: policeTextes;
+	background-image: url("integration_maquette_finale/bg_light.png");
+}
+
+.navbar-collapse ul {
 	list-style-type: none;
 	display: flex;
 }
 
-.wanted {
-	display: flex;
+.navbar_header {
+	background-color: #fe661d;
+	color: white;
+	font-size: 1.2em;
+	font-family: policeTitres;
 }
 
-figure .Gandalf {
-	opacity: 0.4;
-
+.navbar-nav .nav-link {
+	color: white;
 }
 
-.Gandalf {
-	z-index: 1;
+.navbar-nav .nav-item {
+	border-right: 4px solid white;
 }
 
-.gandalf-text {
+.carousel-inner {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 600px;
+}
+
+.carousel-item img {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 600px;
+}
+
+.carousel-caption {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	bottom: 300px;
+	left: 1%;
+	font-size: 4em;
+	font-family: policeTextes;
+}
+
+.fellows h1 {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	font-family: policeTitres;
+}
+
+.fellows ul {
+	font-size: 3.5vh;
+}
+
+.nav-pills {
+	font-family: policeTitres;
+	margin-bottom: 30px;
+	font-size: 1.2em;
+}
+
+.nav-pills a {
+	color: #726f68;
+}
+
+.card .gandalf,
+.aragorn {
+	filter: contrast(0.4);
+	width: 100%;
+	/*opacity: 0.4;*/
+}
+
+.fellows-text {
 	position: relative;
 	bottom: 70%;
 	width: 80%;
-	z-index: 2;
 	font-size: 3em;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 10px;
 	margin-left: 10%;
 }
 
-.gandalf-name {
+.fellows-name {
 	position: relative;
 	bottom: 35%;
 	color: white;
 	font-size: 3em;
-	z-index: 3;
 	opacity: 1;
 	color: white;
 }
 
-mark {
-	color: orange;
-	background-color: rgba(0, 0, 0, 0);
+.gold {
+	color: #CA6837;
 }
 
+.dead-text {
+	color: #CA6837;
+	position: relative;
+	bottom: 70%;
+	width: 80%;
+	font-size: 3.7em;
+	border-radius: 10px;
+	margin-left: 10%;
+	font-weight: bold;
+}
 
-.card:hover .gandalf {
+.gimli-name {
+	position: relative;
+	bottom: 35%;
+	color: white;
+	font-size: 3em;
+	opacity: 1;
+	text-decoration: line-through #CA6837;
+}
+
+.gimli {
+	filter: contrast(0.5);
+	filter: brightness(0.7);
+}
+
+.card:hover .gandalf,
+.card:hover .aragorn {
 	opacity: 1;
 }
 
-.card:hover .gandalf-text {
+.card:hover .fellows-text {
 	visibility: hidden;
 }
 
-.card:hover .gandalf-name {
+.card:hover .fellows-name {
 	position: relative;
 	bottom: 15%;
 	font-size: 2em;
-	z-index: 3;
 	opacity: 1;
 	color: white;
 }
 
-table {
-	border-collapse: collapse;
-	margin: auto;
+.card:hover .fellows-card-body {
+	margin-top: -38%;
+}
+
+.card:hover .fellows-card-body-aragorn {
+	margin-top: -38%;
+}
+
+.fellows-card-body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: #726f68;
+	font-size: 3em;
+	margin-top: -42%;
+}
+
+.fellows-card-body-aragorn {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: #726f68;
+	font-size: 3em;
+	margin-top: -42%;
+}
+
+.fellows-card-body-gimli {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: #726f68;
+	font-size: 3em;
+	margin-top: -32%;
+}
+
+.fellows-images .card {
+	background-color: black;
+}
+
+.captured {
+	background-color: black;
+	color: white;
+	padding: 3%;
+}
+
+.captured h2 {
+	font-family: policeTitres;
+	font-size: 3vh;
+	padding-bottom: 1%;
+}
+
+.captured p {
+	font-size: 2.4vh;
+}
+
+.best-hunters h5 {
+	font-size: 3em;
+	color: #CA6837;
+}
+
+.best-hunters p {
+	font-size: 1.8em;
+}
+
+.about-the-ring .card-table {
+	background-color: black;
+	color: white;
+	font-size: 4vh;
 }
 
 td,
 th {
 	border: 1px solid black;
+}
+
+.about-the-ring table {
+	background-color: #dddddd;
+	color: black;
+	display: inline-table;
+}
+
+.about-the-ring table th {
+	background-color: #CA6837;
+	color: white;
+	font-family: policeTitres;
+	padding: 20px;
+}
+
+.card-ring {
+	background-color: black;
+	color: white;
+	font-size: 5vh;
+}
+
+.card-ring .card-body .blockquote {
+	display: table-column;
+	font-size: 0.8em;
+	background-color: #dddddd;
+	color: black;
+	padding: 10px 20px;
+}
+
+.card-ring .card-body {
+	display: flex;
+	justify-content: center;
+}
+
+.army {
+	padding-top: 1%;
+	padding-bottom: 2%;
+	font-size: 2vh;
+	display: block;
+	justify-content: center;
+}
+
+.army h5 {
+	font-size: 2.5em;
+}
+
+form {
+	background-color: black;
+	padding-bottom: 1%;
+	font-family: policeTitres;
+}
+
+form .form-group {
+	margin: 1% 20%;
+}
+
+form .form-group input,
+.form-control {
+	font-size: 1.5vh;
+	height: 1%;
+}
+
+footer {
+	font-size: 1.1vh;
+	background-color: #fe661d;
+	font-family: policeTitres;
+}
+
+footer .nav-link {
+	color: white;
+	padding-bottom: 10px;
 }
